@@ -1,0 +1,24 @@
+Primary Key:
+  constraint to uniquely identify each record in a table
+  must contain unique records and not be null
+  tables can only have one
+  
+Foreign Key:
+  used to link two tables together
+  field in one table that refers to a primary key in another table
+  parent child relationship
+  
+=====================================================================
+
+DIST Styles
+  - AUTO
+    assigns an optimal style based on the size of the table data
+  - EVEN
+    leader node distributes rows across the slices in a round-robin fashion, like a dealer 
+    handing out cards to each person in a table
+  - KEY
+    distributes according to values in one column. leader node places matching values on the same node.
+    if distributed on joining keys, leader node collocates rows on the slices so that matching values on common columns are
+    physically stored together
+  - ALL
+    copy of the entire table is distributed on every node
