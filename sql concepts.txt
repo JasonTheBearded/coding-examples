@@ -22,3 +22,26 @@ DIST Styles
     physically stored together
   - ALL
     copy of the entire table is distributed on every node
+
+=====================================================================
+
+Difference between clustered and non-clustered index:
+
+ - Clustered Index
+  - Cluster index is a type of index which sorts the data rows in the table on their key values. In the Database, there is only one         clustered index per table.
+
+    A clustered index defines the order in which data is stored in the table which can be sorted in only one way. So, there can be an  
+    only a single clustered index for every table. In an RDBMS, usually, the primary key allows you to create a clustered index based 
+    on that specific column.
+ 
+ - Non-Clustered Index
+  - A Non-clustered index stores the data at one location and indices at another location. The index contains pointers to the 
+    location of that data. A single table can have many non-clustered indexes as an index in the non-clustered index is stored in  
+    different places.
+
+    For example, a book can have more than one index, one at the beginning which displays the contents of a book unit wise while the 
+    second index shows the index of terms in alphabetical order.
+
+    A non-clustering index is defined in the non-ordering field of the table. This type of indexing method helps you to improve the 
+    performance of queries that use keys which are not assigned as a primary key. A non-clustered index allows you to add a unique 
+    key for a table.
