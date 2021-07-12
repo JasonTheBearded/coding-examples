@@ -28,8 +28,7 @@ DIST Styles
 Difference between clustered and non-clustered index:
 
  - Clustered Index
-  - Cluster index is a type of index which sorts the data rows in the table on their key values. In the Database, there is only one         clustered index per table.
-
+  - Cluster index is a type of index which sorts the data rows in the table on their key values. In the Database, there is only one clustered index per table.
     A clustered index defines the order in which data is stored in the table which can be sorted in only one way. So, there can be an  
     only a single clustered index for every table. In an RDBMS, usually, the primary key allows you to create a clustered index based 
     on that specific column.
